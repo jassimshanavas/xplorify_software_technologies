@@ -4,6 +4,7 @@
 * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
+    #05ef5b, #00bfff
 */
 
 /*--------------------------------------------------------------
@@ -17,6 +18,13 @@ body {
 
 
 @media (max-width: 480px) {
+  main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 540px) {
   main {
     margin-left: 10px;
     margin-right: 10px;
@@ -608,8 +616,8 @@ section {
 .section-header h2 {
   font-size: 32px;
   color: #00bfff;
-  text-transform: uppercase;
-  font-weight: 700;
+  text-transform:capitalize;
+  font-weight: 600;
   position: relative;
   padding-bottom: 20px;
 }
@@ -628,6 +636,7 @@ section {
 .section-header p {
   padding: 0;
   margin: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -690,7 +699,7 @@ section {
 --------------------------------*/
 
 .bread {
-  padding: 20px 0;
+  padding: 50px 0 0px 0;
   background-color: white;
   min-height: 40px;
 }
@@ -701,6 +710,14 @@ section {
   margin: 0;
   color:#00bfff;
 }
+
+.bread .section-divider {
+  width: 80%;
+  height: 1px;
+  background-color: #000;
+  margin: 0 auto 90px auto;
+}
+
 
 @media (max-width: 992px) {
   .breadcrumbs h2 {
@@ -857,7 +874,7 @@ section {
 
 #services .box .icon i:before {
   background: #0c2e8a;
-  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background: linear-gradient(45deg, #05ef5b 0%, #00bfff 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -879,6 +896,7 @@ section {
   margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
+  text-align: justify
 }
 
 @media (max-width: 767px) {
@@ -892,10 +910,14 @@ section {
     padding-bottom: 15px;
   }
 
-  #services .box h4,
-  #services .box p {
+  #services .box h4 {
     margin-left: 0;
     text-align: center;
+  }
+
+  #services .box p{
+    margin-left: 0;
+    text-align: justify;
   }
 }
 
@@ -926,11 +948,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #50d8af;
+  border: 1px solid #05ef5b;
 }
 
 #clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #50d8af;
+  background-color: #05ef5b;
 }
 
 /* Our Portfolio Section
@@ -965,7 +987,7 @@ section {
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #50d8af;
+  background: #05ef5b;
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -1149,6 +1171,7 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  text-align: justify;
 }
 
 /* Testimonials Section
@@ -1167,12 +1190,12 @@ section {
   padding: 30px 30px 10px 30px;
   margin: 30px 15px;
   text-align: center;
-  min-height: 395px;
+  min-height: auto;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #testimonials .testimonial-item {
     margin: 30px 10px;
   }
@@ -1195,7 +1218,7 @@ section {
 #testimonials .testimonial-item h4 {
   font-size: 14px;
   color: #999;
-  margin: 0;
+  margin: 05px auto 20px auto;
 }
 
 #testimonials .testimonial-item .quote-sign-left {
@@ -1216,6 +1239,7 @@ section {
 #testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 auto 15px auto;
+  text-align: justify;
 }
 
 #testimonials .swiper-pagination {
@@ -1228,11 +1252,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #50d8af;
+  border: 1px solid #05ef5b;
 }
 
 #testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #50d8af;
+  background-color: #05ef5b;
 }
 
 /* Call To Action Section
@@ -1251,6 +1275,7 @@ section {
 
 #call-to-action .cta-text {
   color: #fff;
+  text-align: justify;
 }
 
 @media (min-width: 769px) {
@@ -1287,6 +1312,54 @@ section {
   padding: 30px 0 0 0;
 }
 
+#team .team-item {
+  box-sizing: content-box;
+  padding: 30px 30px 10px 30px;
+  margin: 30px 15px;
+  text-align: center;
+  min-height: auto;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#team .team-item h3 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 20px auto 5px auto;
+  color: #111;
+  text-align: right;
+}
+
+#team .team-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 10px auto 20px auto;
+  text-align: right;
+}
+
+
+#team .team-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+  text-align: justify;
+}
+
+
+#team .team-item .quote-sign-left {
+  margin-top: -15px;
+  padding-right: 10px;
+  display: inline-block;
+  width: 37px;
+}
+
+#team .team-item .quote-sign-right {
+  margin-bottom: -15px;
+  padding-left: 10px;
+  display: inline-block;
+  max-width: 100%;
+  width: 37px;
+}
+
+
 #team .member {
   text-align: center;
   margin-bottom: 20px;
@@ -1300,6 +1373,7 @@ section {
 #team .member .pic img {
   max-width: 100%;
 }
+
 
 
 
@@ -1384,6 +1458,23 @@ section {
   display: inline-block;
   margin-bottom: 10px;
   color: #50d8af;
+}
+
+
+#contact .contact-info i {
+  color: #444;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+
+#contact .contact-info i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #05ef5b 0%, #00bfff 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #contact .contact-info address,
